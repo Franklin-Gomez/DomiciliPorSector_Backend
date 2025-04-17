@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+      "outDir": "./dist",            // Donde poner los archivos compilados
+      "rootDir": "./src",            // Donde están tus archivos .ts originales
+      "lib": ["esnext"],             // Usa las características más modernas de JS
+      "target": "ESNext",            // Compila a la versión más nueva de JS posible
+      "moduleResolution": "NodeNext",// Cómo resolver imports (nuevo sistema Node.js con "exports"/"imports")
+      "module": "NodeNext",          // Mismo, para trabajar con módulos ESM
+      "strict": false,               // Desactiva comprobaciones estrictas (podés ponerlo en true si querés más seguridad)
+      "sourceMap": true,             // Genera .map para debuggear en navegador o VSCode
+      "esModuleInterop": true,       // Permite importar módulos CommonJS de forma compatible
+      "declaration": true            // Genera archivos .d.ts con los tipos (útil para libs o autocompletado)
+    },
+    "include": ["src/**/*.ts"]       // Solo compila archivos dentro de src
+  }
+  
